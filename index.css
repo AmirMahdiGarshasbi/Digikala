@@ -1,0 +1,661 @@
+@font-face {
+    font-family: 'IranSans';
+    src: url(woff/ttf/IRANSansWeb\(FaNum\).ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IranSans';
+    src: url(woff/ttf/IRANSansWeb\(FaNum\)_Bold.ttf);
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IranSans';
+    src: url(woff/ttf/IRANSansWeb\(FaNum\)_Light.ttf);
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IranSans';
+    src: url(woff/ttf/IRANSansWeb\(FaNum\)_Medium.ttf);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'IranSans';
+    src: url(woff/ttf/IRANSansWeb\(FaNum\)_UltraLight.ttf);
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'IranSans';
+    justify-content: center;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.headerElements {  
+    margin: 10px 0 15px 0;
+}
+
+#head1 {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+#head2 {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+#mobile-head button {
+    width: 100%;
+    background-color: #f2f2f2;
+    color: #81858b;
+    font-size: 14px;
+    text-align: start;
+    border-style: none;
+    padding: 10px;
+}
+
+#mobile-head img {
+    width: 70px;
+}
+
+#theLogo {
+    margin-top: 8px;
+}
+
+.btn img {
+    margin-left: 5px;
+    width: 20px;
+}
+
+.img1 {
+    width: 40%;
+}
+
+.dropdown button {
+    width: 600px;
+    background-color: #f2f2f2;
+    color: #81858b;
+    font-size: 14px;
+    text-align: start;
+    border-style: none;
+    padding: 10px;
+}
+
+.dropdown button:hover {
+    background-color: #fff;
+    color: #81858b;
+}
+
+.btn.show {
+    background-color: #fff;
+    color: #81858b;
+}
+
+#sign-in button{
+    background-color: rgb(245, 240, 240);
+    color: #000000;
+    padding: 5px 10px;
+    margin-top: 4px;
+    margin-right: 160px;
+    margin-left: 5px;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    height: 30px;
+    gap: 5px;
+}
+
+#textBtn {
+    margin-top: 10px;
+}
+
+.verticalLine {
+    border-style: solid;
+    border-width: 0.2px;
+    color: #555;
+}
+
+.verticalLine2 {
+    border-style: solid;
+    border-width: 0.2px;
+    color: #555;
+    height: 20px;
+    margin-right: 5px;
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+}
+
+#navBar2 {
+    width: 15%;
+}
+
+.ham {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    text-align: center;
+    min-width: max-content;
+    flex: 1;
+}
+
+.ham:nth-child(1){
+    margin-right: 0;
+}
+
+.ham p {
+    margin-top: 12px;
+    font-size: 12px;
+    font-weight: 700;
+}
+.ham img {
+    width: 10px;
+    height: 10px;
+}
+
+.dropDown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dropDown img {
+    width: 10px;
+    height: 10px;
+}
+
+.dropDownContent {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    width: fit-content;
+    max-height: 200px;
+    overflow: scroll;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: gainsboro;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.dropDownLink {
+    justify-content: flex-start;
+}
+
+.dropDownLink img {
+    width: 15px;
+    height: 15px;
+}
+
+.dropDownLink:hover {
+    background-image: linear-gradient(rgb(206, 206, 216), rgb(255, 255, 255));
+}
+
+.dropDown:hover .dropDownContent {display: grid;}
+
+.ham a {
+    margin-top: 0px;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+}
+
+.ham a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.ham a:active {
+    color: rgb(163, 34, 34);
+}
+
+#navDist {
+    margin: 5px;
+    padding-right: 200px;
+}
+
+.slideShow {
+    width: 1000;
+    position: relative;
+    margin: auto;
+}
+  
+.mySlides {
+    height: 200px;
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 150%;
+}
+  
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 10s;
+}
+  
+@keyframes fade {
+    from {opacity: 3}
+    to {opacity: 5}
+}
+
+#roundedLinks {
+    width: 100%;
+    padding-top: 120px;
+}
+
+.plusTxt {
+    display: grid;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.plusTxt img {
+    width: 60px;
+}
+
+.swiper {
+    background-color: #ef4056;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 12px;
+    border-radius: 20px;
+    max-width: 1320px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.special {
+    width: auto;
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.special img {
+    height: 70px;
+}
+
+.card {
+    margin: auto;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+}
+
+.card img {
+    height: auto;
+}
+
+.card-body {
+    width: auto;
+}
+
+.gap {
+    margin-top: 15px;
+}
+
+.specialP {
+    gap: 0px;
+    margin: 0px;
+}
+
+.owlItemsSec {
+    margin: 5px;
+    display: grid;
+    text-align: center;
+}
+
+.owlItems{
+    text-decoration: none;
+    color: #000000;
+    width: auto;
+}
+
+.owlDiscount {
+    border-style: solid;
+    background-color: rgb(240, 44, 44);
+    border-radius: 10px;
+    color: #f1f1f1;
+    padding: 7px;
+    font-size: 12px;
+    width: auto;
+}
+
+.owlPrice {
+    padding-right: 30px;
+    font-size: 18px;
+    width: auto;
+}
+
+.owlOmitted {
+    margin-top: 10px;
+    text-decoration: line-through;
+    font-size: 12px;
+    font-weight: 100;
+    width: auto;
+}
+
+.carousel-item {
+    cursor: -webkit-grabbing;
+}
+  
+.carousel-item:hover img {
+    transform: translatey(-1%);
+}
+
+.carousel-item img {
+    width: 150px;
+}
+
+#seeAll {
+    margin-right: 10px;
+    margin-top: 100px;
+}
+
+#seeAll img {
+    width: 50px;
+}
+
+.adBar {
+    text-decoration: none;
+    background: linear-gradient(rgb(214, 203, 203),rgb(247, 244, 244));
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#adImg {
+    margin-top: 17px; 
+    margin-right: 30px;
+    width: 60px;
+}
+
+.roundDiscountImg img {
+    width: 60px;
+    height: 60px;
+}
+
+#greenTxt {
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(10, 233, 10);
+    margin-top: 17px;
+    margin-right: 30px;
+}
+
+#greenBigBtn img{
+    width: 25px;
+}
+
+#btnTxt {
+    margin-top: 17px;
+    margin-right: 30px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 800;
+    background-color: rgb(10, 233, 10);
+    border-radius: 20px;
+    color: #f1f1f1;
+    margin-left: 150px;
+}
+
+.roundDiscountImg {
+    display: grid;
+}
+
+.roundDiscount {
+    background-color: rgb(240, 44, 44);
+    border-radius: 10px;
+    color: #f1f1f1;
+    padding: 3px;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+#greenBigBtn {
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: rgb(14, 233, 14);
+    font-size: 18px;
+    padding: 15px;
+    margin-right: 50px;
+}
+
+.imgOverlays {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.imgOverlays img {
+    width: 320px;
+    border-radius: 20px;
+}
+
+.aTitle {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: black;
+}
+
+.firstCategory {
+    width: 100%;
+    margin-bottom: 0px;
+    display: flex;
+    gap: 80px;
+    margin: 1.3em;
+    flex: 1;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.category-item {
+    display: grid;
+    gap: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#imageOverlays2 {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px;
+}
+
+#imageOverlays2 img {
+    width: 650px;
+    border-radius: 20px;
+}
+
+#newCategory {
+    display: flex;
+    margin-top: 10px;
+    box-sizing: content-box;
+    border-style: solid;
+    border-width: 0.3px;
+    border-color: #a19c9c;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.new-category-item {
+    display: block;
+    width: 100%;
+    height: 200px;
+    margin-top: 2px;   
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    padding: auto;
+    margin: auto;
+}
+
+.outline {
+    outline: 2px solid #a19c9c;
+    outline-offset: 6.5px;
+}
+
+.outline img {
+   margin-right: 58px;
+   max-width: 70px;
+}
+
+.outline p {
+    text-align: center;
+}
+
+#footNav {
+    display: none;
+}
+
+.footNavItem {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    margin: 5px;
+    margin-right: 35px;
+}
+
+.footNavItem img {
+    width: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .ham, #head2, #theLogo, .verticalLine, .verticalLine2, #btnTxt, 
+    #greenBigBtn, #navBar, #navBar2 {
+        display: none;
+    } 
+    #roundedLinks {
+        padding-right: 10px;
+        gap: 70px;
+    }
+    .adBar {
+        height: 200px;
+        margin: 5px;
+    }
+    #greenTxt {
+        margin: 25px;
+        align-self: flex-start;
+        font-size: 20px;
+        margin-left: 150px;
+    }
+    #adImg {
+        align-self: flex-start;
+        margin: 2px;
+    }
+    .imgOverlays img {
+        margin: 5px;
+        width: 220px;
+    }
+    #imageOverlays2 img {
+        margin: 2px;
+        width: 230px;
+    }
+    .newCategory {
+        overflow: auto;
+    }
+    #footNav {
+        position: sticky;
+        bottom: 10px;
+        width: 100%;
+        background-color: #fcf8f8;
+        margin: 5px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #footNavItem1{
+        text-decoration: underline;
+    }
+    .ncg {
+        outline-offset: 45.5px;
+    }
+    .outline img {
+    margin-right: 48px;
+    }
+    .owlPrice {
+        font-size: 10px;
+    }
+    .owlDiscount {
+        font-size: 6px;
+    }
+}
