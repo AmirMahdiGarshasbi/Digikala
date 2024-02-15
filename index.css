@@ -672,11 +672,10 @@ body {
     }
     #footNav {
         position: sticky;
-        bottom: 10px;
+        bottom: 0;
+        z-index: 99;
         width: 100%;
-        background-color: #fcf8f8;
-        margin: 5px;
-        margin-top: 30px;
+        background-color: #fff;
         display: flex;
         justify-content: space-evenly;
     }
